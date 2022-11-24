@@ -452,7 +452,8 @@ justify-content: space-around;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-color var(--time) var(--timing-function), color var(--time) var(--timing-function);
+  transition: background-color var(--time) var(--timing-function),
+    color var(--time) var(--timing-function);
 }
 
 .social-icon {
@@ -506,7 +507,8 @@ justify-content: space-around;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: border-color var(--time) var(--timing-function), color var(--time) var(--timing-function);
+  transition: border-color var(--time) var(--timing-function),
+    color var(--time) var(--timing-function);
 }
 .client-icon {
   fill: currentColor;
@@ -627,7 +629,8 @@ justify-content: space-around;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-color var(--time) var(--timing-function), color var(--time) var(--timing-function);
+  transition: background-color var(--time) var(--timing-function),
+    color var(--time) var(--timing-function);
 }
 .social-footer-icon {
   fill: currentColor;
@@ -739,7 +742,9 @@ justify-content: space-around;
   background: var(--background-grey-color);
   border-radius: 4px;
   
-  transition: background-color var(--time) var(--timing-function), color var(--time) var(--timing-function), box-shadow var(--time) var(--timing-function);
+  transition: background-color var(--time) var(--timing-function), 
+    color var(--time) var(--timing-function), 
+    box-shadow var(--time) var(--timing-function);
 }
 
 .btn-active:hover,
@@ -771,7 +776,10 @@ justify-content: space-around;
     0px 4px 4px rgba(0, 0, 0, 0.06), 
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-
+.projects-link{
+  transition: box-shadow var(--time) var(--timing-function),
+    border-box var(--time) var(--timing-function);
+}
 .projects-box:hover .projects-focus{
   transform: translateY(0);
   transition: transform 250ms linear;
