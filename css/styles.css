@@ -11,6 +11,8 @@
   --border-color: #ececec;
   --background-img-color: #c4c4c4;
   --social-icon-color: #AFB1B8;
+  --time: 250ms;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -145,15 +147,14 @@ justify-content: space-around;
   margin-left: 50px;
 } */
 .header-nav-link {
-  /* display: block; */
   color:  var(--title-text-color);
   font-weight: 500;
   line-height: 1.1428;
   letter-spacing: 0.02em;
   position: relative;
   padding-bottom: 33px;
+  transition: color var(--time) var(--timing-function);
 }
-
 
 /*---------------Авторизація навігації-------------------*/
 /*---------------Активне поле-------------------------*/
@@ -203,6 +204,7 @@ justify-content: space-around;
   font-weight: 500;
   color: var(--primary-text-color);
   text-decoration: none;
+  transition: color var(--time) var(--timing-function);
 }
 
 
@@ -285,6 +287,7 @@ justify-content: space-around;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  transition: background-color var(--time) var(--timing-function);
 }
 
 .btn:hover,
@@ -449,6 +452,7 @@ justify-content: space-around;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color var(--time) var(--timing-function), color var(--time) var(--timing-function);
 }
 
 .social-icon {
@@ -496,13 +500,13 @@ justify-content: space-around;
 .client-links {
   width: 100%;
   height: 100%;
-  /* background-color: tomato; */
   color: var(--social-icon-color);
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: border-color var(--time) var(--timing-function), color var(--time) var(--timing-function);
 }
 .client-icon {
   fill: currentColor;
@@ -623,6 +627,7 @@ justify-content: space-around;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color var(--time) var(--timing-function), color var(--time) var(--timing-function);
 }
 .social-footer-icon {
   fill: currentColor;
@@ -734,7 +739,7 @@ justify-content: space-around;
   background: var(--background-grey-color);
   border-radius: 4px;
   
-  border-radius: 4px;
+  transition: background-color var(--time) var(--timing-function), color var(--time) var(--timing-function), box-shadow var(--time) var(--timing-function);
 }
 
 .btn-active:hover,
@@ -778,7 +783,6 @@ justify-content: space-around;
   overflow: hidden;
   width: 370px;
   height: 294px;
-  
 }
 
 .projects-focus {
@@ -792,6 +796,7 @@ justify-content: space-around;
   color: var(--white-color);
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
+  transition: transform 250ms linear;
   overflow: auto;
 }
 
